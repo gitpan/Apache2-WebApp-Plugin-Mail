@@ -21,7 +21,7 @@ use MIME::Lite::TT;
 use MIME::Lite::TT::HTML;
 use Params::Validate qw( :all );
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~[  OBJECT METHODS  ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -34,6 +34,7 @@ sub send_text {
     my ( $self, $c, $data_ref )
       = validate_pos( @_,
           { type => OBJECT  },
+          { type => HASHREF },
           { type => HASHREF }
           );
 
@@ -60,6 +61,7 @@ sub send_html {
     my ( $self, $c, $data_ref )
       = validate_pos( @_,
           { type => OBJECT  },
+          { type => HASHREF },
           { type => HASHREF }
           );
 
