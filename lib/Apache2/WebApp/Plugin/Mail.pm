@@ -21,7 +21,7 @@ use MIME::Lite::TT;
 use MIME::Lite::TT::HTML;
 use Params::Validate qw( :all );
 
-our $VERSION = 0.08;
+our $VERSION = 0.09;
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~[  OBJECT METHODS  ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
